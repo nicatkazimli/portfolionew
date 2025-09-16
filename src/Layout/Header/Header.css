@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Poppins:wght@400;600;700&display=swap');
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: rgba(0,0,0,0.7);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  font-family: 'Poppins', sans-serif;
+  unicode-bidi: isolate;
+  background-image: url('https://plus.unsplash.com/premium_photo-1682146749338-f380c93c8dec?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo span {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.header nav {
+  display: flex;
+font-family: poppins;
+  font-size: 20px;
+  gap: 10px;
+  margin-left: -180px;
+}
+
+.header nav a {
+  position: relative;
+  margin-left: 0; 
+  margin-right: 30px; 
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 2px;
+  border-radius: 5px;
+  transition: all 0.6s ease;  /* 👈 bütün dəyişikliklər üçün */
+}
+
+.header nav a:hover {
+  color: #23bbe4;
+  background-color: white;
+  border: 1px solid aqua;
+}
+
+.header nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.9s ease;
+  
+}
+
+.header nav a:hover::after {
+  width: 100%;
+  transform: scale(100%);
+  
+
+}
+
+.header .social {
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  gap: 10px; 
+}
+
+.header .social a {
+  color: #fff;
+  padding: 2px; 
+  border-radius: 5px;
+  transition: all 0.6s ease; 
+  text-decoration: none; 
+  display: flex;
+  align-items: center;
+  gap: 1px; 
+}
+
+
+.header .social a:hover {
+  color: #23bbe4;
+  border: 1px solid aqua;
+  background-color: white;
+}
+
+.svg{
+    margin-left: 20px;
+    position: relative;
+    left: 9px;
+}
+
+

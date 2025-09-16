@@ -1,0 +1,53 @@
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 40px;
+  background-image: url('https://emploi.ouest-france.fr/sites/default/files/styles/originale/public/cameraman.jpg?itok=iJY7FVeB');
+}
+
+.video-card {
+  background-color: #111; /* dark background for videos */
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-card video {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #333;
+}
+
+.video-card p {
+  padding: 10px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.video-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+  .portfolio-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}
