@@ -27,14 +27,19 @@
 }
 
 .header nav {
+   backdrop-filter: blur(50px);
+font-family: 'Poppins', sans-serif;
   display: flex;
-font-family: poppins;
   font-size: 20px;
   gap: 10px;
   margin-left: -180px;
+  box-shadow: 0px 0px 0px 6px rgba(227, 228, 238, 0.37);
+  border: 2px solid rgba(255, 255, 255, 0.18)
 }
 
 .header nav a {
+ 
+  font-family: 'Poppins', sans-serif;
   position: relative;
   margin-left: 0; 
   margin-right: 30px; 
@@ -43,7 +48,7 @@ font-family: poppins;
   font-weight: 500;
   padding: 2px;
   border-radius: 5px;
-  transition: all 0.6s ease;  /* 👈 bütün dəyişikliklər üçün */
+  transition: all 0.6s ease;  
 }
 
 .header nav a:hover {
@@ -76,9 +81,12 @@ font-family: poppins;
   align-items: center;
   font-family: 'Poppins', sans-serif;
   gap: 10px; 
+    box-shadow: 0px 0px 0px 6px rgba(227, 228, 238, 0.37);
+  border: 2px solid rgba(255, 255, 255, 0.18)
 }
 
 .header .social a {
+  
   color: #fff;
   padding: 2px; 
   border-radius: 5px;
