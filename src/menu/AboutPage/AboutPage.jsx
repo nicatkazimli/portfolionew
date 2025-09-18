@@ -22,8 +22,8 @@ const AboutPage = () => {
 
           </p>
           <div className="about-buttons">
-            <Link href="/portfolio" className="btn">İşlərimə Bax</Link>
-            <Link href="/contact" className="btn btn-outline">Əlaqə Saxla</Link>
+            <Link to="/portfolio" className="btn">İşlərimə Bax</Link>
+            <Link to="/contact" className="btn btn-outline">Əlaqə Saxla</Link>
           </div>
         </div>
       </div>
