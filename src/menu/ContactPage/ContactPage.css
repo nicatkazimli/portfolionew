@@ -119,6 +119,9 @@
     position: relative;
     left: 9px;
 }
+input {
+  font-family: inherit;
+}
 
 @media (max-width: 768px) {
   .social {
