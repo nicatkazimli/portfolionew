@@ -1,5 +1,6 @@
 import React from 'react';
 import './AboutPage.css';
+import { Link } from 'react-router-dom';
 
 const AboutPage = () => {
   return (
@@ -7,7 +8,7 @@ const AboutPage = () => {
       <div className="about-overlay">
         <div className="about-content">
           <h2>Kiməm Mən</h2>
-          
+
           <h1>Nicat Kazımlı</h1>
           <p>
             <p>
@@ -21,8 +22,8 @@ const AboutPage = () => {
 
           </p>
           <div className="about-buttons">
-            <a href="/portfolio" className="btn">İşlərimə Bax</a>
-            <a href="/contact" className="btn btn-outline">Əlaqə Saxla</a>
+            <Link href="/portfolio" className="btn">İşlərimə Bax</Link>
+            <Link href="/contact" className="btn btn-outline">Əlaqə Saxla</Link>
           </div>
         </div>
       </div>

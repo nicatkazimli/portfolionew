@@ -1,5 +1,6 @@
 import React from 'react';
 import './HomePage.css';
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
   return (
@@ -7,7 +8,7 @@ const HomePage = () => {
       <div className="hero-content">
         <h2>Sənin websaytın və Video Editlərin</h2>
         <h1>Videographer Nijat'in Portfoliosu</h1>
-        <a href="/about" className="cta-button">Haqqımda daha çox</a>
+        <Link href="/about" className="cta-button">Haqqımda daha çox</Link>
       </div>
     </div>
   )
