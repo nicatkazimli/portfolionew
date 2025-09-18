@@ -33,7 +33,7 @@ const ContactPage = () => {
           {!isSubmitted ? (
             <form 
               className="contact-form" 
-              action="https://formsubmit.co/el/kotufu" 
+              action="https://formsubmit.co/kazimlin08@gmail.com" 
               method="POST"
               onSubmit={handleSubmit}
             >
