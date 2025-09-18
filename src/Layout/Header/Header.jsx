@@ -21,11 +21,6 @@ const Header = () => {
         <Link to='/contact'>Əlaqə</Link>
       </nav>
 
-      <div className="social">
-        <img className='svg' src='https://img.icons8.com/?size=100&id=hFoVFpm6gl9A&format=png&color=000000' width={30} /> <a href="#"><i className="fab fa-facebook-f">instagram</i></a>
-       <img className='svg' src='https://img.icons8.com/?size=100&id=GN6LgEfShU2b&format=png&color=000000' width={30} /> <a href="#"><i className="fab fa-instagram">tiktok</i></a>
-        <img className='svg' src='https://img.icons8.com/?size=100&id=118562&format=png&color=000000' width={30} /> <a href="#"><i className="fab fa-twitter"></i>facebook</a>
-      </div>
     </div>
   )
 }

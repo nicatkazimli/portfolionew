@@ -7,6 +7,7 @@ const AboutPage = () => {
       <div className="about-overlay">
         <div className="about-content">
           <h2>Kiməm Mən</h2>
+          
           <h1>Nicat Kazımlı</h1>
           <p>
             <p>
