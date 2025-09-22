@@ -50,6 +50,8 @@
 }
 
 .contact-form button {
+  position: relative;
+  left: 250px;
   padding: 12px 30px;
   border: none;
   border-radius: 5px;
@@ -133,7 +135,10 @@ input,textarea {
      border: none;
     backdrop-filter: none;
   }
-
+.contact-form button {
+  position: relative;
+  left: 250px;}
+  
   .social a {
     display: flex;
     align-items: center;
