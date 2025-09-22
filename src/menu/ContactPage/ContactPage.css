@@ -137,8 +137,8 @@ input,textarea {
   }
 .contact-form button {
   position: relative;
-  left: 250px;}
-  
+  left: 100px;}
+
   .social a {
     display: flex;
     align-items: center;
