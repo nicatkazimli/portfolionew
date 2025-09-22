@@ -120,6 +120,8 @@
 }
 
 .about-stats {
+  position: relative;
+  top: 20px;
   display: flex;
   justify-content: space-around;
   gap: 10px;
@@ -146,8 +148,9 @@
   color: #fff;
 }
 
-/* Testimonials */
 .about-testimonials {
+  position: relative;
+  top: 10px;
   display: flex;
   flex-direction: column;
   gap: 15px;
