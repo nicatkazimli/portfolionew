@@ -227,6 +227,13 @@
   .stat p, .testimonial p, .testimonial span {
     font-size: 0.95rem;
   }
+  .about-stats {
+   position: relative;
+  top: 20px; }
+  .about-testimonials {
+   position: relative;
+  top: 10px; }
+
 }
 .about-content {
   display: flex;
