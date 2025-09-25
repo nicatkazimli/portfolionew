@@ -1,16 +1,18 @@
+/* Header.css */
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Poppins:wght@400;600;700&display=swap');
 
-*{
-padding: 0;
-margin: 0;
-box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px 40px;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -31,38 +33,33 @@ box-sizing: border-box;
   margin-left: 10px;
 }
 
+.app-name {
+  margin-left: 10px; /* Adjusted for mobile */
+}
+
 .header nav {
-   backdrop-filter: blur(50px);
-font-family: 'Poppins', sans-serif;
   display: flex;
   font-size: 22px;
   gap: 15px;
-  margin-left: -160px;
-  box-shadow: 0px 0px 0px 6px rgba(227, 228, 238, 0.37);
-  border: 2px solid rgba(255, 255, 255, 0.18)
 }
 
-.header nav a {
- 
+.header .nav-link {
   font-family: 'Poppins', sans-serif;
-  position: relative;
-  margin-left: 0; 
-  margin-right: 30px; 
-  text-decoration: none;
   color: #fff;
-  font-weight: 500;
+  text-decoration: none;
   padding: 2px;
   border-radius: 5px;
-  transition: all 0.6s ease;  
+  transition: all 0.6s ease;
+  position: relative;
 }
 
-.header nav a:hover {
+.header .nav-link:hover {
   color: #23bbe4;
   background-color: white;
   border: 1px solid aqua;
 }
 
-.header nav a::after {
+.header .nav-link::after {
   content: '';
   position: absolute;
   left: 0;
@@ -70,57 +67,16 @@ font-family: 'Poppins', sans-serif;
   width: 0;
   height: 2px;
   background-color: white;
-  transition: width 0.9s ease;
-  
+  transition: width 0.6s ease; /* Adjusted timing */
 }
 
-.header nav a:hover::after {
+.header .nav-link:hover::after {
   width: 100%;
-  transform: scale(100%);
-  
-
 }
-
-
-
-.header .social {
-  display: flex;
-  align-items: center;
-  font-family: 'Poppins', sans-serif;
-  gap: 10px; 
-    box-shadow: 0px 0px 0px 6px rgba(227, 228, 238, 0.37);
-  border: 2px solid rgba(255, 255, 255, 0.18)
-}
-
-.header .social a {
-  
-  color: #fff;
-  padding: 2px; 
-  border-radius: 5px;
-  transition: all 0.6s ease; 
-  text-decoration: none; 
-  display: flex;
-  align-items: center;
-  gap: 1px; 
-}
-
-
-.header .social a:hover {
-  color: #23bbe4;
-  border: 1px solid aqua;
-  background-color: white;
-}
-
-.svg{
-    margin-left: 20px;
-    position: relative;
-    left: 9px;
-}
-
 
 @media (max-width: 768px) {
   .header {
-    flex-direction: column;
+    flex-direction: flex;
     align-items: flex-start;
     padding: 20px;
     gap: 20px;
@@ -128,9 +84,8 @@ font-family: 'Poppins', sans-serif;
 
   .header nav {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 sütun */
-    gap: 15px 20px; /* satır və sütun arası boşluq */
-    margin-left: 0; /* margin düzəldildi */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 20px;
     width: 100%;
     box-shadow: none;
     border: none;
@@ -138,7 +93,7 @@ font-family: 'Poppins', sans-serif;
     padding: 10px;
   }
 
-  .header nav a {
+  .header .nav-link {
     font-size: 16px;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.1);
@@ -147,4 +102,54 @@ font-family: 'Poppins', sans-serif;
     border-radius: 4px;
     margin: 0;
   }
+
+  .app-name {
+    margin-left: 0;
+  }
+}
+
+.MuiDrawer-paper {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  color: white !important;
+}
+
+.MuiListItemText-root {
+  color: white !important;
+}
+
+.MuiDrawer-paper::-webkit-scrollbar {
+  display: none;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.app-name {
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
 }
